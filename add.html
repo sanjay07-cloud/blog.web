@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Add Post</h1>
+    <form method="post" action="{{ url_for('addpost') }}" enctype="multipart/form-data">
+      <p><input name="title" placeholder="Title" required></p>
+      <p><textarea name="content" placeholder="Content" required></textarea></p>
+      <p><input type="file" name="image" accept="image/*"></p>
+      <p><button type="submit">Create</button></p>
+    </form>
+    <p><a href="{{ url_for('hello_world') }}">Back</a></p>
+  </body>
+</html>
+

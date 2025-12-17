@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<!doctype html>
+<html><body>
+  <h1>Sign up</h1>
+  <form method="post" action="{{ url_for('signin') }}">
+    <p><input name="username" placeholder="Username" required></p>
+    <p><input name="password" type="password" placeholder="Password" required></p>
+    <p><button type="submit">Sign up</button></p>
+  </form>
+  <p><a href="{{ url_for('login') }}">Back to login</a></p>
+</body></html>
+{% endblock %}

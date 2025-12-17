@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+<center>
+  <h1>About This Blog</h1>
+  <p>
+    Welcome to the Flask Blog! 🚀  
+    This is a simple blogging platform built with
+    <strong>Python</strong>, <strong>Flask</strong>, <strong>SQLAlchemy</strong>, and <strong>Flask-Login</strong>.
+  </p>
+
+  <p>
+    Features:
+    <ul>
+      <li>User registration & login</li>
+      <li>Create, edit,like and delete blog posts</li>
+      <li>Secure password storage (hashed)</li>
+      <li>Only authors can edit/delete their posts</li>
+    </ul>
+  </p>
+
+  <p>
+    This project is designed as a learning example to help beginners understand how to 
+    build a full-stack web application using Flask.  
+    You can extend it with features like comments, likes, or categories.
+  </p>
+  <p>
+    <a href="{{ url_for('hello_world') }}">Home</a>
+  </p>
+  </center>
+{% endblock %}
